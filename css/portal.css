@@ -25,3 +25,29 @@ body {
         font-size: 2.5rem;
     }
 }
+/* === Category cards section (Issue #4) === */
+.categories {
+    padding: 60px 15px;
+    background-color: #E6E9FA;
+}
+
+.category-card {
+    padding: 30px 20px;
+}
+
+.category-card i {
+    font-size: 3rem;
+    color: #3D488A;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.category-card h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #444444;
+    margin-bottom: 0;
+}
