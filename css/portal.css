@@ -6,3 +6,22 @@ body {
 }
 
 /* Sekcje będą dodawane w miarę postępu prac */
+/* === Hero section (Issue #3) === */
+.hero {
+    padding: 60px 15px;
+    background-color: #3D488A;
+    color: #ffffff;
+}
+
+.hero p {
+    color: #E6E9FA;
+}
+
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 40px 15px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
