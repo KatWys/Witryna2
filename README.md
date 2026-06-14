@@ -1,12 +1,36 @@
 # Praca w zespole
 ## Witryna ćwiczeniowa
-**Grupa:
-Katarzyna Wysińska
-Kamil Potępski
-Jakub Predpełski
-Sylwester Olszewski
-Marcin Szychta**
+
+# Projekt: InfoInfo
+
+Portal informatyczny tworzony w ramach zajęć. Projekt prezentuje nowoczesne podejście do tworzenia responsywnych stron internetowych.
+
+**Grupa 2
+## Zespół projektowy:
+- Kamil Potępski
+- Jakub Predpełski
+- Sylwester Olszewski
+- Marcin Szychta**
 - Katarzyna Wysinska - kierownik
+
+## Technologie
+Projekt został wykonany przy użyciu:
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5**
+- **JavaScript** 
+
+## Uruchomienie projektu
+1. Sklonuj repozytorium: 
+   `git clone https://github.com/KatWys/Witryna2.git`
+2. Otwórz plik `index.html` w przeglądarce.
+
+## Adres strony (GitHub Pages)
+Strona jest dostępna pod adresem: 
+[Wklej tutaj link, który wygenerował Ci GitHub w zakładce Pages]
+
+## Postępy prac
+Projekt jest zarządzany za pomocą tablicy Kanban w sekcji **Projects**.
 
 ## Zasady pracy w repozytorium
 Każde zadanie w projekcie jest tworzone jako osobne Issue. Do każdego Issue należy utworzyć osobną gałąź roboczą i osobny Pull Request.
