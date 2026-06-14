@@ -1,15 +1,18 @@
-/* Plik główny stylów projektu InfoInfo */
-
-/* Tutaj dodajemy style dla strony głównej */
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --primary-color: #2241F7;
+    --secondary-color: #3D488A;
+    --light-bg: #E6E5FA;
 }
 
-/* Sekcje będą dodawane w miarę postępu prac */
-/* === Hero section (Issue #3) === */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+}
+
+/* === Hero section === */
 .hero {
-    padding: 60px 15px;
-    background-color: #3D488A;
+    padding: 80px 15px;
+    background-color: var(--secondary-color);
     color: #ffffff;
 }
 
@@ -17,37 +20,33 @@ body {
     color: #E6E9FA;
 }
 
-@media (max-width: 575.98px) {
-    .hero {
-        padding: 40px 15px;
-    }
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-}
-/* === Category cards section (Issue #4) === */
+/* === Category cards section === */
 .categories {
     padding: 60px 15px;
-    background-color: #E6E9FA;
+    background-color: var(--light-bg);
 }
 
 .category-card {
     padding: 30px 20px;
+    background: #ffffff;
+    border: 1px solid var(--light-bg);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .category-card i {
     font-size: 3rem;
-    color: #3D488A;
+    color: var(--primary-color);
     margin-bottom: 15px;
     display: inline-block;
 }
 
 .category-card h3 {
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 10px;
-}
-
-.category-card p {
-    color: #444444;
-    margin-bottom: 0;
 }
