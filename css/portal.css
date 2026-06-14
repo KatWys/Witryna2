@@ -1,14 +1,18 @@
-/* Plik główny stylów projektu InfoInfo */
+:root {
+    --primary-color: #2241F7;
+    --secondary-color: #3D488A;
+    --light-bg: #E6E5FA;
+}
 
-/* Tutaj dodajemy style dla strony głównej */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
 }
 
 /* === Hero section (Issue #3) === */
 .hero {
-    padding: 60px 15px;
-    background-color: #3D488A;
+    padding: 80px 15px;
+    background-color: var(--secondary-color);
     color: #ffffff;
 }
 
@@ -36,6 +40,15 @@ body {
 
 .category-card {
     padding: 30px 20px;
+    background: #ffffff;
+    border: 1px solid var(--light-bg);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .category-card i {
@@ -45,7 +58,7 @@ body {
 }
 
 .category-card h3 {
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
