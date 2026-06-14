@@ -9,7 +9,7 @@ body {
     color: var(--secondary-color);
 }
 
-/* === Hero section === */
+/* === Hero section (Issue #3) === */
 .hero {
     padding: 80px 15px;
     background-color: var(--secondary-color);
@@ -18,12 +18,24 @@ body {
 
 .hero p {
     color: #E6E9FA;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* === Category cards section === */
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 40px 15px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* === Category cards section (Issue #4) === */
 .categories {
-    padding: 60px 15px;
-    background-color: var(--light-bg);
+    padding: 20px 15px;
+    background-color: #9FA7D6;
 }
 
 .category-card {
@@ -41,12 +53,77 @@ body {
 
 .category-card i {
     font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: -15px;
     display: inline-block;
 }
 
 .category-card h3 {
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #444444;
+    margin-bottom: 0;
+}
+
+/* === Authors carousel section (Issue #5) === */
+.authors {
+    padding: 60px 15px;
+    background-color: #E6E9FA;
+}
+
+.authors h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.authors .carousel-item img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.authors .carousel-inner {
+    padding: 0 70px;
+}
+
+.authors .carousel-control-prev,
+.authors .carousel-control-next {
+    width: 60px;
+    opacity: 1;
+}
+
+.authors .carousel-control-prev-icon,
+.authors .carousel-control-next-icon {
+    width: 44px;
+    height: 44px;
+    background-color: #3D488A;
+    background-size: 20px 20px;
+    background-position: center;
+    border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+    .authors .carousel-inner {
+        padding: 0 55px;
+    }
+    .authors .carousel-control-prev,
+    .authors .carousel-control-next {
+        width: 45px;
+    }
+    .authors .carousel-control-prev-icon,
+    .authors .carousel-control-next-icon {
+        width: 36px;
+        height: 36px;
+        background-size: 16px 16px;
+    }
+    .authors .carousel-item img {
+        max-width: 200px;
+        height: 200px;
+    }
 }
