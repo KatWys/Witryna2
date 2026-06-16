@@ -126,4 +126,19 @@ body {
         max-width: 200px;
         height: 200px;
     }
+    #kontakt 
+    {
+    background-color: #f8f9fa;
+    }
+
+    #kontakt .shadow-sm 
+    {
+    border: 1px solid #e3e6f0;
+    transition: transform 0.2s;
+    }  
+
+    #kontakt .shadow-sm:hover 
+    {
+    transform: translateY(-2px);
+    }
 }
