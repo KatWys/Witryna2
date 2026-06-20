@@ -27,7 +27,7 @@ Projekt został wykonany przy użyciu:
 
 ## Adres strony (GitHub Pages)
 Strona jest dostępna pod adresem: 
-[Wklej tutaj link, który wygenerował Ci GitHub w zakładce Pages]
+https://katwys.github.io/Witryna2/
 
 ## Postępy prac
 Projekt jest zarządzany za pomocą tablicy Kanban w sekcji **Projects**.
