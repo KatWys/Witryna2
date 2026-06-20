@@ -113,18 +113,25 @@ main {
 }
 
 /* === Map section === */
-#mapa {
-    overflow: hidden;
+.map-container {
+    position: relative;
+    border: 3px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(61, 72, 138, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#mapa iframe {
+.map-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(61, 72, 138, 0.25);
+}
+
+.map-container iframe {
     width: 100%;
     height: 450px;
     border: 0;
     display: block;
 }
 
-.contact {
     background-color: #f8f9fa;
 }
 
