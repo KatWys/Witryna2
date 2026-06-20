@@ -112,11 +112,7 @@ main {
     border-radius: 50%;
 }
 
-/* === Map section (Issue #7) === */
-.map-section {
-    background-color: var(--light-bg);
-}
-
+/* === Map section === */
 .map-container {
     position: relative;
     border: 3px solid #ffffff;
@@ -134,8 +130,6 @@ main {
     height: 450px;
 }
 
-/* === Kontakt section === */
-#kontakt {
     background-color: #f8f9fa;
 }
 
@@ -148,13 +142,31 @@ main {
     transform: translateY(-2px);
 }
 
+.contact-info-card {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: 1px solid var(--secondary-color) !important;
+}
+
+.contact-info-card h4 {
+    color: #ffffff;
+}
+
+.contact-info-card p {
+    color: #ffffff;
+}
+
+.contact-info-card i {
+    color: var(--light-bg) !important;
+}
+
 /* === Stopka projektu === */
 #footer {
     flex-shrink: 0;
     border-top: 1px solid #444;
 }
 
-/* === Responsywność (Media Queries) === */
+
 @media (max-width: 767.98px) {
     .map-container iframe {
         height: 300px;
