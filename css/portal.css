@@ -1,7 +1,7 @@
 :root {
     --primary-color: #2241F7;
     --secondary-color: #3D488A;
-    --light-bg: #E6E5FA;
+    --light-bg: #E6E9FA;
 }
 
 /* === Ustawienia globalne i przyklejona stopka === */
@@ -17,7 +17,6 @@ body {
     flex-direction: column;
 }
 
-/* Kluczowa reguła: zmusza główną treść do rozciągania się i wypychania stopki */
 main {
     flex: 1 0 auto;
 }
@@ -79,10 +78,8 @@ main {
 
 .authors h3 {
     font-weight: bold;
-    margin-bottom: 15px;
-    position: relative;
-    top: -10px;
-    left: -10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .authors .carousel-item img {
@@ -93,7 +90,7 @@ main {
 }
 
 .authors .carousel-inner {
-    padding: 0 70px;
+    padding: 15px 70px 20px 70px;
 }
 
 .authors .carousel-control-prev,
@@ -112,7 +109,49 @@ main {
     border-radius: 50%;
 }
 
-/* === Map section === */
+/* === Contact section (Issue #6) === */
+.contact {
+    padding: 60px 15px;
+    background-color: #5E70D6;
+    color: #ffffff;
+}
+
+.contact h2 {
+    color: #ffffff;
+}
+
+.contact-info-card {
+    background-color: transparent;
+    color: #ffffff;
+    border: none !important;
+}
+
+.contact-info-card h4 {
+    color: #ffffff;
+}
+
+.contact-info-card p {
+    color: #ffffff;
+}
+
+.contact-info-card i {
+    color: var(--light-bg);
+}
+
+.contact .form-label {
+    color: #ffffff;
+}
+
+.contact .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* === Map section (Issue #7) === */
+.map-section {
+    background-color: var(--light-bg);
+}
+
 .map-container {
     position: relative;
     border: 3px solid #ffffff;
@@ -128,38 +167,6 @@ main {
 .map-container iframe {
     width: 100%;
     height: 450px;
-    border: 0;
-    display: block;
-}
-
-    background-color: #f8f9fa;
-}
-
-#kontakt .shadow-sm {
-    border: 1px solid #e3e6f0;
-    transition: transform 0.2s;
-}  
-
-#kontakt .shadow-sm:hover {
-    transform: translateY(-2px);
-}
-
-.contact-info-card {
-    background-color: var(--secondary-color);
-    color: #ffffff;
-    border: 1px solid var(--secondary-color) !important;
-}
-
-.contact-info-card h4 {
-    color: #ffffff;
-}
-
-.contact-info-card p {
-    color: #ffffff;
-}
-
-.contact-info-card i {
-    color: var(--light-bg) !important;
 }
 
 /* === Stopka projektu === */
@@ -168,9 +175,9 @@ main {
     border-top: 1px solid #444;
 }
 
-
+/* === Responsywność === */
 @media (max-width: 767.98px) {
-    #mapa iframe {
+    .map-container iframe {
         height: 300px;
     }
 }
@@ -183,7 +190,7 @@ main {
         font-size: 2.5rem;
     }
     .authors .carousel-inner {
-        padding: 0 55px;
+        padding: 15px 55px 20px 55px;
     }
     .authors .carousel-control-prev,
     .authors .carousel-control-next {
